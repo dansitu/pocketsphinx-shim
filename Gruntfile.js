@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
       },
       dist: {
-        src: ['src/namespace.js', 'src/speechRecognition.js'],
+        src: ['src/intro.js', 'src/namespace.js', 'src/speechRecognition.js', 'src/outtro.js'],
         dest: 'build/<%= pkg.name %>.js'
       }
     },
