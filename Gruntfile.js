@@ -12,11 +12,15 @@ module.exports = function(grunt) {
         src: ['src/namespace.js', 'src/speechRecognition.js'],
         dest: 'build/<%= pkg.name %>.js'
       }
+    },
+    watch: {
+      files: ['src/*.js'],
+      tasks: ['concat']
     }
   });
 
-  // Load the plugin that provides the "concat" task.
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task(s).
   grunt.registerTask('default', ['concat']);
