@@ -2,8 +2,8 @@
   "name": "pocketsphinx-shim",
   "version": "0.1.0",
   "devDependencies": {
-    "grunt": "*",
-    "grunt-contrib-concat": "*",
-    "grunt-mocha": "*"
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-mocha": "~0.3.4"
   }
 }
