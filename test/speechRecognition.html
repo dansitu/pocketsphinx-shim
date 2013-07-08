@@ -8,9 +8,15 @@
   <div id="mocha"></div>
   <script src="../node_modules/expect.js/expect.js"></script>
   <script src="../node_modules/mocha/mocha.js"></script>
-  <script src="../build/pocketsphinx-shim.js"></script>
   <script>mocha.setup('bdd')</script>
+
+  <script src="../pocketsphinx/audioRecorder.js"></script>
+  <script src="../pocketsphinx/callbackManager.js"></script>
+
+  <script src="../build/pocketsphinx-shim.js"></script>
+
   <script src="test.speechRecognition.js"></script>
+
   <script>
     mocha.run();
   </script>
